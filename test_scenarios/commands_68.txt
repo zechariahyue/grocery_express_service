@@ -1,0 +1,17 @@
+// test customer with location and deliver order
+sell_item,walmart,bacon,1
+display_items,walmart
+// create a customer to purchase items
+make_customer,carli2,Chanel,Cortez,666-666-6666,4,100
+place_customer,carli2,50,50
+display_customers
+// create multiple orders as requested by customers
+start_order,walmart,ordA,1,carli2
+display_orders,walmart
+// add multiple items to the orders
+request_item,walmart,ordA,bacon,1,5
+display_orders,walmart
+display_drones,walmart
+deliver_order,walmart,ordA
+display_drones,walmart
+purchase_order,walmart,ordA

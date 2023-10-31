@@ -1,0 +1,13 @@
+// test refueling drones
+make_refueling_drone,walmart,rf1,1000
+set_fuel_consumption_rate,walmart,rf1,1
+make_pilot,gina3,Gina,Garcia,222-222-2222,222-22-2222,lic_3,6
+display_pilots
+fly_drone,walmart,rf1,gina3
+fuel_drone,walmart,rf1
+display_refueling_drones,walmart
+request_refueling_drone,walmart,1,rf1
+display_drones,walmart
+move_drone,walmart,1,0,0
+display_drones,walmart
+fuel_drone,walmart,1

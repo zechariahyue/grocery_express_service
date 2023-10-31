@@ -1,0 +1,22 @@
+make_store,walmart,10000
+// place store walmart to location 0,0
+place_store,walmart,0,0
+display_stores
+make_refueling_station,s1,100,0
+make_refueling_station,s2,0,50
+display_refueling_stations
+make_drone,walmart,1,10,3
+// set the max fuel capacity of drone
+set_drone_max_fuel_capacity,walmart,1,100
+// set fuel consumption rate of drone
+set_fuel_consumption_rate,walmart,1,1
+// fuel drone
+fuel_drone,walmart,1
+display_drones,walmart
+make_pilot,alan2,Alan,Alexander,111-111-1111,111-11-1111,lic_2,4
+display_pilots
+fly_drone,walmart,1,alan2
+// move drone, drone cannot move
+move_drone,walmart,1,200,0
+move_drone,walmart,1,90,0
+display_drones,walmart
